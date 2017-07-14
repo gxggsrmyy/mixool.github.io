@@ -33,6 +33,8 @@ tags:
    git push origin hexo
    ```
 8. 执行`hexo g -d`生成网站并部署到GitHub上,GitHub上的仓库就有两个分支，一个hexo分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。完美( •̀ ω •́ )y  
+
+
 #### 更新和恢复
 
    1. 更新  
