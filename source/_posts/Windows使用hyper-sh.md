@@ -2,6 +2,7 @@
 title: windows使用hyper.sh
 date: 2017-07-14 14:37:47
 tags:
+comments: false
 ---
 
 [Hyper.sh](https://console.hyper.sh/register/invite/Wqwq4zj25nCQ8Q0267waig7g9dMrOWTR)是一家国外的容器服务提供商，新注册有送10刀。

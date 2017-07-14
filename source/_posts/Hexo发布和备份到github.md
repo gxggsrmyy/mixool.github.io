@@ -1,7 +1,9 @@
 ---
 title: Hexo发布和备份到github
 date: 2017-07-14 19:34:06
-tags:
+tags: 
+- Hexo
+- Github
 ---
 #### 搭建流程  
 

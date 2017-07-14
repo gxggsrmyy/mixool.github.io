@@ -1,7 +1,8 @@
 ---
 title: Digitalocean搭建WordPress博客并启用HTTPS
 date: 2017-07-14 11:09:42
-tags:
+tags: WordPress
+comments: false
 ---
 #### [注册Digtalocean](https://m.do.co/c/382409e24e05)
 #### 一键搭建WordPress
