@@ -305,7 +305,7 @@ han: false
 # Disqus
 disqus:
   enable: true
-  shortname: Mcl
+  shortname: mixool
   count: true
 
 # Hypercomments
