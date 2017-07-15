@@ -46,11 +46,13 @@ tags:
    git push origin hexo    //更新到hexo
    hexo g -d               //发布到master
    ```
-   2. 恢复  
+   2. 恢复
+  [Install hexo](https://hexo.io/zh-cn/docs/index.html#安装)
    ```
    git clone https://github.com/mixool/mixool.github.io.git
    cd mixool.github.io
-   npm install hexo
    npm install
-   npm install hexo-deployer-git
+   npm install hexo-deployer-git --save
+   git clone https://github.com/iissnan/hexo-theme-next themes/next
+   hexo s
    ```
