@@ -36,8 +36,8 @@ tags: docker
 
 ##### Daocloud部署中转：
 查找Dockerhub镜像mixool/gost,部署并设置端口443 TCP TCP 外部访问，高级设置中添加启动命令  
-* `-L=:443 -F=https://xxxx.arukascloud.io:443`『替换https://xxxx.arukascloud.io为Endpoint』
-* `-L=:443 -F=ss://aes-128-cfb:123456@ip:prot` 『替换ip:port为实际地址』
+* https中转,替换https://xxxx.arukascloud.io为Endpoint: `-L=:443 -F=https://xxxx.arukascloud.io:443`
+* ss中转: `-L=:443 -F=ss://aes-128-cfb:123456@ip:port` 
 
 #### Tips:  
 * 部署Daocloud中转后swichyomega也可设置代理类型为http或socks4,手机可使用此http代理。
