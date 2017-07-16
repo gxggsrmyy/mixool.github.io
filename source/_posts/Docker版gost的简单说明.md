@@ -20,7 +20,7 @@ tags: docker
 
 #### Docker版本gost
 * [Based on debian:oldstable-slim](https://hub.docker.com/r/mixool/gost/) Size: 23M
-* [based on alpine.](https://hub.docker.com/r/mixool/alpine-gost/) Size: 6M  
+* [Based on alpine.](https://hub.docker.com/r/mixool/alpine-gost/) Size: 6M  
 
 ##### Arukas部署
 * 8080-TCP|CMD `-L=:8080` 
