@@ -75,7 +75,7 @@ pagination_dir: page
 theme: next
 
 baidu_url_submit:
-  count: 1
+  count: 10
   host: cioic.cc
   token: inpA0j3k3UQ4MQIW
   path: baidu_urls.txt
