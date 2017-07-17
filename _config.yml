@@ -90,3 +90,7 @@ deploy:
 - type: baidu_url_submitter
   
 avatar: /uploads/Mcl.jpg
+
+google_analytics: UA-102662708-1
+
+baidu_analytics: 0f53e6d9666de912fccb9eff86d6b024
