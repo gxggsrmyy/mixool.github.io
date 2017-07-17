@@ -74,12 +74,19 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+baidu_url_submit:
+  count: 1
+  host: cioic.cc
+  token: inpA0j3k3UQ4MQIW
+  path: baidu_urls.txt
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: git@github.com:mixool/mixool.github.io.git
   branch: master
   message: 
+- type: baidu_url_submitter
   
 avatar: /uploads/Mcl.jpg
