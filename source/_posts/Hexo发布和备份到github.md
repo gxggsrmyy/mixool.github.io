@@ -51,6 +51,7 @@ tags:
    ```
    git clone https://github.com/mixool/mixool.github.io.git
    cd mixool.github.io
+   npm install -g hexo-cli
    npm install
    npm install hexo-deployer-git --save
    git clone https://github.com/iissnan/hexo-theme-next themes/next
