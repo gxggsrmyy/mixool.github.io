@@ -47,5 +47,5 @@ MSDN资源区：IP:43110/1AJB5rtjfB9imjDGVk5vtRtZp3zgYizbpG
 2. [Yichengr](http://ryc111.com/2016/05/02/zeronet-on-vps/)
 3. [项目地址](https://github.com/HelloZeroNet/ZeroNet)
 4. 进入ZeroNet后继续学习吧
-5. [cioic.cc](http://ppub.pub) 密码挺好猜的，勿滥用，~~随时失效~~
+5. [cioic.cc](http://cioic.cc) 密码挺好猜的，勿滥用，~~随时失效~~ **失效吧，不安全**
 6. [Docker搭建](http://zeronet.daoapp.io)
