@@ -3,7 +3,7 @@ title: Rest in peace Chester
 date: 2017-07-21 19:14:41
 tags: like
 ---
-![chester.jpg](https://ooo.0o0.ooo/2017/07/21/5971dfbcdd874.jpg)
+![chester.jpg](/images/chester.jpg "Chester Bennington")
 > Thank you Chester, you will be forever missed.
 
 <!--more-->
