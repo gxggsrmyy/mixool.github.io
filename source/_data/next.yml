@@ -163,7 +163,7 @@ sidebar:
   scrollpercent: false
   
   # Enable sidebar on narrow view
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
