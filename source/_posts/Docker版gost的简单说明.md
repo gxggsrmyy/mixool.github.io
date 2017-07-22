@@ -42,5 +42,5 @@ tags: docker
 #### Tips:  
 * 部署Daocloud中转后swichyomega也可设置代理类型为http或socks4,手机可使用此http代理。
 * KCP加速需要使用gost的客户端。
-* Arukas的Https代理地址Endpoint是固定的，Daoapp的地址和端口是固定的，均可以一次部署，长期使用（Daoapp默认的24小时关闭可用API自动重启，参考[**这篇文章**](http://cioic.cc/2017/Docker%E7%89%88gost%E7%9A%84%E7%AE%80%E5%8D%95%E8%AF%B4%E6%98%8E.html)
+* Arukas的Https代理地址Endpoint是固定的，Daoapp的地址和端口是固定的，均可以一次部署，长期使用（Daoapp默认的24小时关闭可用API自动重启，参考[**这篇文章**](http://cioic.cc/2017/Daocloud-Api%E9%87%8D%E5%90%AF%E5%BA%94%E7%94%A8.html)
 * 可以在CMD命令中添加更多的-L监听多端口搭建不同类型代理，搭建Https+SS服务`-L=:443 -L=ss://chacha20:123456@8338`
