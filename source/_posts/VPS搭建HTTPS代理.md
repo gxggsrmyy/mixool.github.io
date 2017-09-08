@@ -1,7 +1,7 @@
 ---
 title: VPS搭建HTTPS代理
 date: 2017-09-08 09:53:50
-tags:
+tags: vps
 ---
 电脑上使用HTTPS代理挺方便的，Chrome+Switchyomega即可科学上网，这里推荐两个简单的搭建方法。
 准备一个域名，并解析到VPS.
