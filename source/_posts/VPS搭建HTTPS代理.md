@@ -19,7 +19,7 @@ tags:
 `acme.sh --renew --ecc -d yourdomain.com`
 > 记录证书文件路径，待用。
 
-#### 使用Gost搭建
+#### 搭建
 `wget https://github.com/ginuerzh/gost/releases/download/v2.4/gost_2.4_linux_amd64.tar.gz`
 `tar zxvf gost_2.4_linux_amd64.tar.gz`
 `mv /root/gost_2.4_linux_amd64/gost /root/`
@@ -30,6 +30,6 @@ Gost可以搭建多种类型的代理，这里只是用其一个功能：
 
 伪装成一个HTTPS网站：[悄悄的，打枪的不要](https://9ot.top/)
 
-###### 参考
+### About
 [goproxy-vps](https://github.com/phuslu/goproxy/issues/1470)
 [gost](https://github.com/ginuerzh/gost#gost---go-simple-tunnel)
