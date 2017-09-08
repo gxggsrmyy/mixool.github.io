@@ -16,7 +16,7 @@ tags:
 `acme.sh  --issue  --dns --keylength ec-256 -d yourdomain.com`
 > 按提示给出的字符更新 DNS TXT 记录
 
-```acme.sh --renew --ecc -d yourdomain.com```
+`acme.sh --renew --ecc -d yourdomain.com`
 > 记录证书文件路径，待用。
 
 #### 使用Gost搭建
