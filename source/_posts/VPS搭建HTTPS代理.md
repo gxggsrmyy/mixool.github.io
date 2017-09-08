@@ -10,6 +10,8 @@ tags:
 安装方法：
 `curl -L git.io/get-goproxy-vps | bash`
 只需输入域名即可开始享用。
+> 转：社长的图文教程 ![goproxy.jpg](/images/goproxy.jpg)
+
 ### Gost
 #### 申请免费证书
 `curl https://get.acme.sh | bash - && cp /root/.acme.sh/acme.sh /usr/bin/acme.sh && chmod u+x /usr/bin/acme.sh`
