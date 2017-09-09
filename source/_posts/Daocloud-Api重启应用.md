@@ -33,6 +33,6 @@ curl -X POST "https://openapi.daocloud.io/v1/apps/d14591f9-f3cf-4cyb-a51d-75cb92
 30 15 * * * root curl -X POST "https://openapi.daocloud.io/v1/apps/d14591f9-f3cf-4cyb-a51d-75cb92c3b229/actions/redeploy" -H "Authorization: token 3od70jtlyaair4s024s77ourj7ttcuiq6eqh5wp4" -H "Content-Type: application/json" -d '{"release_name": "latest"}'
 ```  
 #### 更多使用方式和范例
-* [My droppy](http://droppy.daoapp.io)  
-  * 重新部署资源会清空，解决办法：使用Volume  
+* [~~My droppy 失效~~](http://droppy.daoapp.io)  
+  * 重新部署资源会清空，解决办法：使用Volume
 * [ruyo:DaoCloud.io部署指南](http://51.ruyo.net/p/3720.html)

@@ -12,7 +12,7 @@ tags:
 <!--more-->
 ### About  
 ##### [Dockerhub](https://hub.docker.com/r/mixool/docker-gip/)
-##### [checkiptools](https://github.com/johnsonz/go-checkiptools)  
+##### [Checkiptools](https://github.com/johnsonz/go-checkiptools)  
 ##### 大局域网内搭建才有效果，访问端口`80-http`  
 ##### GAE相关  Docker部署
 ##### Apache2目录文件
