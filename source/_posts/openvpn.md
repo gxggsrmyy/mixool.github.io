@@ -45,3 +45,4 @@ route 10.0.0.172 255.255.255.255 net_gateway
 ### 参考
 [Angristan/OpenVPN-install](https://github.com/Angristan/OpenVPN-install)
 [HTTP Injector](https://apps.evozi.com/httpinjector/)
+[Latest version of OpenVPN](https://openvpn.net/index.php/open-source/downloads.html)
