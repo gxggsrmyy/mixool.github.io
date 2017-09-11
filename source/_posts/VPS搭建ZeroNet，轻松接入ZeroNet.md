@@ -16,7 +16,9 @@ tags:
 
 #### Debian 8 64搭建步骤
 ```Bash
-wget https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-linux64.tar.gz
+apt-get update
+apt-get install msgpack-python python-gevent
+wget --no-check-certificate https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-linux64.tar.gz
 tar xvpfz ZeroBundle-linux64.tar.gz
 cd ZeroBundle
 ./ZeroNet.sh --ui_ip "*"
