@@ -37,6 +37,8 @@ http-proxy-option EXT1 "X-Online-Host: rd.go.10086.cn"
 You have to add http-proxy 127.0.0.1 8989 and bypass route route replace_to_your_remote_proxy_ip 255.255.255.255 net_gateway (change "replace_to_your_remote_proxy_ip" to IP) to your VPN config.
 
 China mobile:
+> HTTP Injector 载荷生成器勾选 /正常 GET 后面注入/ 填写HOST/ 然后生成有效载荷.
+
 ```
 http-proxy 127.0.0.1 8989
 route 10.0.0.172 255.255.255.255 net_gateway
