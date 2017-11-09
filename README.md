@@ -1,4 +1,4 @@
-### 尝试用github issue写博客  
+### Issue当作博客　(Link)[https://github.com/mixool/mixool.github.io/issues]
 #### 优点:
 1. 简单方便  
 2. 可以在线写, 可以预览, 可以评论, 可以加tag  
