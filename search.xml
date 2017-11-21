@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Heroku部署gsnova]]></title>
+    <url>%2F2017%2FHeroku%E9%83%A8%E7%BD%B2gsnova.html</url>
+    <content type="text"><![CDATA[Gsnova Private proxy solution. About: yinqiwen/gsnova Heroku部署-科学上网 安装git和heroku-cli 下载gsnova-pass 解压gsnova-pass包,进入解压后的文件夹，依次执行: git init git add . git commit -m "gsnova" heroku login heroku create git push heroku master Gsnova客户端修改配置文件 参考 Github/gsnova Deploying Go Apps on Heroku 一次Heroku部署完整过程 Heroku 部署说明]]></content>
+      <tags>
+        <tag>科学上网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[VNC Server on Debian 8]]></title>
     <url>%2F2017%2FVNC-Server-on-Debian-8.html</url>
     <content type="text"><![CDATA[Installing VNC and XFCE1234apt-get updateapt-get upgrade -y mkdir /dev/fuse &amp;&amp; chmod +x /dev/fuse apt-get install xfce4 xfce4-goodies gnome-icon-theme tightvncserver iceweasel -y VNC Server: start: vncserver stop: vncserver -kill :1 Connecting from a VNC ClientYou can now connect to your VNC server. Open your local VNC client, which will vary depending on your operating system. On Windows, you can use UltraVNC here. On OS X, you can use the built-in Screen Sharing app or access this app through Safari. In Safari, you can enter vnc://yourserverip:5901 For your VNC Server address, enter yourserverip:5901 and use the password you just set for your VNC connection. About From：Digitalocean 我的使用方式主要是c9.io运行科学上网的程序，关闭界面后会自动休眠，VNC可以解决这个痛点。]]></content>
