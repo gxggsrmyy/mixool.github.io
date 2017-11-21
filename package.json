@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "hexo": "^3.3.8",
-    "hexo-baidu-url-submit": "0.0.5",
     "hexo-deployer-git": "^0.3.1",
     "hexo-fs": "^0.2.1",
     "hexo-generator-archive": "^0.1.4",
