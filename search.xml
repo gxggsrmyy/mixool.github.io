@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Openvpn]]></title>
+    <url>%2F2017%2Fopenvpn.html</url>
+    <content type="text"><![CDATA[OpenVPN-install This script will let you setup your own secure VPN server in just a few minutes. 实测用这个安装脚本可以科学上网，安全性未知，速度尚可。123wget https://raw.githubusercontent.com/Angristan/OpenVPN-install/master/openvpn-install.sh chmod +x openvpn-install.sh./openvpn-install.sh 设置建议 port 3389 cipher AES-256-CBC 免流相关免流测试使用http-proxy-option失败,使用HTTP Injector成功。Host: apk.mmarket.com 每天可以领1G的流量。 http-proxy-option123456789http-proxy 10.0.0.172 80http-proxy-retryhttp-proxy-option VERSION HTTP/1.1http-proxy-option AGENT user-agent -- Set HTTP &quot;User-Agent&quot; string to user-agent.http-proxy-option CUSTOM-HEADER GET http://apk.mmarket.com/ HTTP/1.1http-proxy-option CUSTOM-HEADER HOST apk.mmarket.comhttp-proxy-option EXT1 &quot;POST http://rd.go.10086.cn&quot;http-proxy-option EXT1 &quot;GET http://rd.go.10086.cn&quot;http-proxy-option EXT1 &quot;X-Online-Host: rd.go.10086.cn&quot; HTTP InjectorHTTP Injector 载荷生成器勾选 /正常 GET 后面注入/ 填写HOST/ 然后生成有效载荷。 OpenVPN - Disable “Start SSH” and use HTTP Injector with your OpenVPN if you don’t have SSH server.You have to add http-proxy 127.0.0.1 8989 and bypass route route replace_to_your_remote_proxy_ip 255.255.255.255 net_gateway (change “replace_to_your_remote_proxy_ip” to IP) to your VPN config. China mobile:12http-proxy 127.0.0.1 8989route 10.0.0.172 255.255.255.255 net_gateway 参考Angristan/OpenVPN-installHTTP InjectorLatest version of OpenVPN]]></content>
+      <tags>
+        <tag>openvpn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VPS搭建HTTPS代理]]></title>
+    <url>%2F2017%2FVPS%E6%90%AD%E5%BB%BAHTTPS%E4%BB%A3%E7%90%86.html</url>
+    <content type="text"><![CDATA[电脑上使用HTTPS代理挺方便的，Chrome+Switchyomega即可科学上网，这里推荐两个简单的搭建方法。准备一个域名，并解析到VPS. Goproxy-vps安装方法：curl -L git.io/get-goproxy-vps | bash只需输入域名即可开始享用。 转：社长的图文教程 Gost申请免费证书curl https://get.acme.sh | bash - &amp;&amp; cp /root/.acme.sh/acme.sh /usr/bin/acme.sh &amp;&amp; chmod u+x /usr/bin/acme.shacme.sh --issue --dns --keylength ec-256 -d yourdomain.com 按提示给出的字符更新 DNS TXT 记录 acme.sh --renew --ecc -d yourdomain.com 记录证书文件路径，待用。 搭建wget https://github.com/ginuerzh/gost/releases/download/v2.4/gost_2.4_linux_amd64.tar.gztar zxvf gost_2.4_linux_amd64.tar.gzmv /root/gost_2.4_linux_amd64/gost /root/chmod +x gostGost可以搭建多种类型的代理，这里只是用其一个功能：nohup /root/gost -L=&quot;http2://:443?cert=/path/to/my/cert/file&amp;key=/path/to/my/key/file&quot; &amp; 修改命令中的证书文件路径，端口亦可修改。一般NAT VPS不提供443端口，好在便宜，低成本科学上网 伪装成一个HTTPS网站：悄悄的，打枪的不要 Aboutgoproxy-vpsgost]]></content>
+      <tags>
+        <tag>vps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[轻松获取google ip]]></title>
+    <url>%2F2017%2F%E8%BD%BB%E6%9D%BE%E8%8E%B7%E5%8F%96google-ip.html</url>
+    <content type="text"><![CDATA[Checkiptools with dockerDemo 排序:右键单击查看源码 AboutDockerhubCheckiptools大局域网内搭建才有效果，访问端口80-httpGAE相关 Docker部署Apache2目录文件 index.htmlip_tmpok.txtip_tmpno.txtip_tmperr.txtmain.jsongoogleip.txtREADME.md…]]></content>
+      <tags>
+        <tag>docker</tag>
+        <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Rest in peace Chester]]></title>
+    <url>%2F2017%2FRest-in-peace-Chester.html</url>
+    <content type="text"><![CDATA[Thank you Chester, you will be forever missed. NumbI’m tired of being what you want me to be我厌倦了当你的傀儡Feeling so faithless, lost under the surface感到茫然无主，在表象之下迷失了自我Don’t know what you’re expecting of me不知道你究竟对我有何种期望Put under the pressure of walking in your shoes活在你的阴影下饱受压力(Caught in the undertow just caught in the undertow)（泥足深陷，无法自拔）Every step I take is another mistake to you我所走的每一步对你而言不过是另一個错误(Caught in the undertow just caught in the undertow)（泥足深陷，无法自拔） I’ve become so numb, I can’t feel you there我已麻木，感觉不到你的存在I’ve become so tired, so much more aware我已精疲力尽，卻更加觉醒了悟I’m becoming this, all I want to do我逐渐明白，我一心渴望的Is be more like me and be less like you就是活得更像自己，而非另一个你 Can’t you see that you’re smothering me你难道沒发现你快让我窒息了吗Holding too tightly, afraid to lose control死命紧抓不放，害怕失去掌控Cause everything that you thought I would be因为你对我的种种期待Has fallen apart right in front of you已全然在你面前支离破碎(Caught in the undertow just caught in the undertow)（泥足深陷，無法自拔）Every step that I take is another mistake to you我所走的每一步对你而言不过是另一个错误(Caught in the undertow just caught in the undertow)（泥足深陷，無法自拔）And every second I waste is more than I can take而我不会再这样浪费我的一分一秒 I’ve become so numb, I can’t feel you there我已麻木，感覺不到你的存在I’ve become so tired, so much more aware我已精疲力尽，卻更加觉醒了悟I’m becoming this, all I want to do我逐渐明白，我一心渴望的Is be more like me and be less like you就是活得更像自己，而非另一個你And I know I may end up failing too我明白我最后可能也会一败涂地But I know you were just like me with someone disappointed in you但我知道你正如同我一样，也曾有人对你失望至极]]></content>
+      <tags>
+        <tag>like</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VPS搭建ZeroNet，轻松接入ZeroNet]]></title>
+    <url>%2F2017%2FVPS%E6%90%AD%E5%BB%BAZeroNet%EF%BC%8C%E8%BD%BB%E6%9D%BE%E6%8E%A5%E5%85%A5ZeroNet.html</url>
+    <content type="text"><![CDATA[ZeroNEt是什么 使用 Bitcoin 加密和 BitTorrent 网络的去中心化网络 项目中文说明：zeronet.io 为什么要用VPS搭建 不需要本地环境，随时访问，可以共享给更小白的朋友 吃灰小鸡不如利用起来 Debian 8 64搭建步骤123456apt-get updateapt-get install msgpack-python python-geventwget --no-check-certificate https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-linux64.tar.gztar xvpfz ZeroBundle-linux64.tar.gzcd ZeroBundle./ZeroNet.sh --ui_ip "*" 如果没报错，最新版本ZeroNet就已经成功安装了，访问你的IP:43110即可进入ZeroNet。 添加访问密码和自启动mv /root/ZeroBundle/ZeroNet/plugins/disabled-UiPassword /root/ZeroBundle/ZeroNet/plugins/UiPasswordvi /etc/systemd/system/zeronet.service123456789[Unit]Description=zeronet[Service]ExecStart=/root/ZeroBundle/ZeroNet.sh --ui_ip "*" --ui_password yourpasswordRestart=always[Install]WantedBy=multi-user.target systemctl enable zeronet.service &amp;&amp; systemctl start zeronet.servicereboot访问你的IP或者域名:43110测试是否成功 一些资源海盗湾种子站：IP:43110/1PLAYgDQboKojowD3kwdb3CtWmWaokXvfpMSDN资源区：IP:43110/1AJB5rtjfB9imjDGVk5vtRtZp3zgYizbpG 参考和PS 不能确保你绝对匿名的情况下勿发表敏感言论 Yichengr 项目地址 进入ZeroNet后继续学习吧 cioic.cc 密码挺好猜的，勿滥用，随时失效 失效吧，不安全 Docker搭建]]></content>
+      <tags>
+        <tag>VPS</tag>
+        <tag>ZeroNet</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Freenom提供免费域名和快速建站]]></title>
+    <url>%2F2017%2FFreenom%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%92%8C%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99.html</url>
+    <content type="text"><![CDATA[Freenom注册域名 A Name for Everyone, Free to renew (unlimited renewals). 用邮箱注册帐号并登录 搜索可用域名并注册，默认是3个月免费，手动改为12个月。 Services下拉菜单选择My Domains查看是否注册成功。 Gosite快速建站 My Domains界面，选择Manage GoSite，然后点击ENABLE GOSITE Site has been successfully enabled 点击Go to the GoSite Website Editor进入站点管理界面 折腾站点的各种配置，弄成喜欢的样子。我把图片都删了，然后自己添加插件 右上角点击PUBLISH，然后访问你的域名看看效果吧！这是我的：fofc.cf 感觉这个fofc.cf也是萌萌哒]]></content>
+      <tags>
+        <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Docker版gost的简单说明]]></title>
+    <url>%2F2017%2FDocker%E7%89%88gost%E7%9A%84%E7%AE%80%E5%8D%95%E8%AF%B4%E6%98%8E.html</url>
+    <content type="text"><![CDATA[Gost go语言实现的安全隧道项目地址：ginuerzh/gost 可同时监听多端口 可设置转发代理，支持多级转发(代理链) 支持标准HTTP/HTTPS/SOCKS5代理协议 SOCKS5代理支持TLS协商加密 Tunnel UDP over TCP 支持Shadowsocks协议 (OTA: 2.2+，UDP: 2.4+) 支持本地/远程端口转发 (2.1+) 支持HTTP 2.0 (2.2+) 实验性支持QUIC (2.3+) 支持KCP协议 (2.3+) 透明代理 (2.3+) Docker版本gost Based on debian:oldstable-slim Size: 23M Based on alpine. Size: 6M Arukas部署 8080-TCP|CMD -L=:8080 client: chrome+switchyomega HTTPS Endpoint:443 gost client: -L=:8080 -F=socks5://s_ip:s_port 8088-UDP|CMD -L=http2+kcp://:8088 gost client: -L=:8080 -F=http2+kcp://s_ip:s_port 8080-TCP,8088-UDP,8338-tcp|CMD-L=:8080 -L=http2+kcp://:8088 -L=ss://aes-128-cfb:password@:8338 client: shadowsocks client gost client: -L=:8080 -F=?Arukas于2017-7-31结束免费试用，可以尝试部署到Bluemix、Hyber.sh等其他平台。 Daocloud部署中转：查找Dockerhub镜像mixool/gost,部署并设置端口443 TCP TCP 外部访问，高级设置中添加启动命令 https中转,替换https://xxxx.arukascloud.io为Endpoint: -L=:443 -F=https://xxxx.arukascloud.io:443 ss中转: -L=:443 -F=ss://aes-128-cfb:123456@ip:port Tips: 部署Daocloud中转后swichyomega也可设置代理类型为http或socks4,手机可使用此http代理。 KCP加速需要使用gost的客户端。 Arukas的Https代理地址Endpoint是固定的，Daoapp的地址和端口是固定的，均可以一次部署，长期使用（Daoapp默认的24小时关闭可用API自动重启，参考这篇文章 可以在CMD命令中添加更多的-L监听多端口搭建不同类型代理，搭建Https+SS服务-L=:443 -L=ss://chacha20:123456@8338]]></content>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我剁手的域名]]></title>
+    <url>%2F2017%2F%E6%88%91%E5%89%81%E6%89%8B%E7%9A%84%E5%9F%9F%E5%90%8D.html</url>
+    <content type="text"><![CDATA[依次剁了下面几个域名，不要瞎逛502论坛 ppub.pub HTTPS 9ot.top 闲置 droppy.cn Droppy项目，私人网盘 coccic.cc 之前博客就用的这个，因为 多C多漂亮! cioic.cc 现在用的域名，因为地址栏和Site title看起来比多C更Moe! cc.cioic.cc 强行对称…… 还想剁的域名cicic.cc 比cioci更多C！ 人有多大胆，地有多大产。 关于续费cc和pub买的10年，应该会一直用。其它都是1年，到期扔，当然有人接盘最好咯，捞点学费回来.]]></content>
+      <tags>
+        <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Daocloud-Api重启应用]]></title>
+    <url>%2F2017%2FDaocloud-Api%E9%87%8D%E5%90%AF%E5%BA%94%E7%94%A8.html</url>
+    <content type="text"><![CDATA[Daocloud 重新定义计算的边界,业界领先的企业级应用云平台及解决方案。 官方的测试资源回收机制: 应用每 24 小时会自动停止 长时间不使用的资源(Volume、服务)在下述情况下会被系统智能回收（当前观察期为两周，视资源池使用情况会有变动） 在观察期内资源没有绑定任何应用 在观察期内资源绑定的应用没有执行 启动／发布 等更新操作 开放API文档当我们建立的应用停止后调用重新发布 App这个API就行了。1curl -X POST &quot;https://openapi.daocloud.io/v1/apps/&lt;app_id&gt;/actions/redeploy&quot; -H &quot;Authorization: token &lt;my token&gt;&quot; -H &quot;Content-Type: application/json&quot; -d &apos;&#123;&quot;release_name&quot;: &quot;v1.0.0&quot;&#125;&apos; 获取my token： 用户中心-API页面,大概是这样子的3od70jtlyaair4s024s77ourj7ttcuiq6eqh5wp4 获取app_id： 点击你创建的应用，地址栏最后一长串就是咯，大概是这样子d14591f9-f3cf-4cyb-a51d-75cb92c3b229 获取release_name：点击你创建的应用，应用图标下就是当前的镜像版本，一般为latest 修改后的curl命令大概是这样子的：1curl -X POST "https://openapi.daocloud.io/v1/apps/d14591f9-f3cf-4cyb-a51d-75cb92c3b229/actions/redeploy" -H "Authorization: token 3od70jtlyaair4s024s77ourj7ttcuiq6eqh5wp4" -H "Content-Type: application/json" -d '&#123;"release_name": "latest"&#125;' VPS自动执行先运行一下最后的curl命令，没出错的话对应的Daoapp会重新部署。然后加入计划任务完工。vi /etc/crontab 30 15 * * * root curl -X POST &quot;https://openapi.daocloud.io/v1/apps/d14591f9-f3cf-4cyb-a51d-75cb92c3b229/actions/redeploy&quot; -H &quot;Authorization: token 3od70jtlyaair4s024s77ourj7ttcuiq6eqh5wp4&quot; -H &quot;Content-Type: application/json&quot; -d &#39;{&quot;release_name&quot;: &quot;latest&quot;}&#39; 更多使用方式和范例 My droppy 失效 重新部署资源会清空，解决办法：使用Volume ruyo:DaoCloud.io部署指南]]></content>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[五十首凄美宋词]]></title>
+    <url>%2F2017%2F%E4%BA%94%E5%8D%81%E9%A6%96%E5%87%84%E7%BE%8E%E5%AE%8B%E8%AF%8D.html</url>
+    <content type="text"><![CDATA[人的情感一直以来都和诗词有着密切的联系，尤其是那些让人印象深刻的感伤诗词 赵令畤《清平乐》 春风依旧，著意随堤柳。搓得蛾儿黄欲就，天气清明时候。去年紫陌青门，今宵雨魄云魂。断送一生憔悴，只销几个黄昏。 张炎《八声甘州》 记玉关踏雪事清游，寒气脆貂裘。傍枯林古道，长河饮马，此意悠悠。短梦依然江表，老泪洒西州。一字无题处，落叶都愁。载取白云归去，问谁留楚佩，弄影中洲？折芦花赠远，零落一身秋。向寻常野桥流水，待招来不是旧沙鸥。空怀感，有斜阳处，却怕登楼。 张炎《鹧鸪天》 楼上谁将玉笛吹，山前水阔暝云低。劳劳燕子人千里，落落梨花雨一枝。修禊近，卖饧时，故乡惟有梦相随。夜来折得江头柳，不是苏堤也皱眉。 秦观《浣溪沙》 漠漠轻寒上小楼，晓阴无赖似穷秋。淡烟流水画屏幽。自在飞花轻似梦，无边丝雨细如愁。宝帘闲挂小银钩。 张炎《朝中措》 清明时节雨声哗，潮拥渡头沙。翻被梨花冷看，人生苦恋天涯。燕帘莺户，云窗雾阁，酒醒啼鸦。折得一枝杨柳，归来插向谁家？ 晏几道《蝶恋花》 卷絮风头寒欲尽，坠粉飘红，日日成香阵。新酒又添残酒困，今春不减前春恨。蝶去莺飞无处问，隔水高楼，望断双鱼信。恼乱层波横—寸，斜阳只与黄昏近。 柳永《蝶恋花》 伫倚危楼风细细，望极春愁，黯黯生天际。草色烟光残照里，无言谁会凭阑意。拟把疏狂图一醉，对酒当歌，强乐还无味。衣带渐宽终不悔，为伊消得人憔悴。 欧阳修《蝶恋花》 庭院深深深几许？杨柳堆烟，帘幕无重数。玉勒雕鞍游冶处，楼高不见章台路。雨横风狂三月暮，门掩黄昏，无计留春住。泪眼问花花不语，乱红飞过秋千去。 欧阳修《蝶恋花》 谁道闲情抛弃久？每到春来，惆怅还依旧。日日花前常病酒，不辞镜里朱颜瘦。河畔青芜堤上柳，为问新愁，何事年年有？独立小桥风满袖，平林新月人归后。 晏几道《蝶恋花》 醉别西楼醒不记，春梦秋云，聚散真容易。斜月半窗还少睡，画屏闲展吴山翠。衣上酒痕诗里字，点点行行，总是凄凉意。红烛自怜无好计，夜寒空替人垂泪。 冯延巳《蝶恋花》 萧索清秋珠泪坠。枕簟微凉，展转浑无寐。残酒欲醒中夜起，月明如练天如水。阶下寒声啼络纬。庭树金风，悄悄重门闭。可惜旧欢携手地，思量一夕成憔悴。 秦观《鹊桥仙》 纤云弄巧，飞星传恨，银汉迢迢暗渡。金风玉露一相逢，便胜却人间无数。柔情似水，佳期如梦，忍顾鹊桥归路。两情若是长久时，又岂在朝朝暮暮。 秦观《八六子》 倚危亭,恨如芳草,萋萋铲尽还生.念柳外青骢别后,水边红袂分时,怆然暗惊. 无端天与娉婷,夜月一帘幽梦。春风十里柔情,怎奈何、欢娱渐随流水.素弦声断,翠绡香减,那堪片片飞花弄晚. 蒙蒙残雨笼晴,正销凝,黄鹂又啼数声。 李之仪《卜算子》 我住长江头，君住长江尾。日日思君不见君，共饮长江水。此水几时收，此恨何时已。只愿君心似我心，定不负相思意。 陆游《卜算子》 驿外断桥边，寂寞开无主。已是黄昏独自愁，更著风和雨。无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。 苏轼《卜算子》黄州定慧院寓居 缺月挂疏桐，漏断人初静。谁见幽人独来往，飘渺孤鸿影。惊起却回头，有恨无人省。拣尽寒枝不肯栖，寂寞沙洲冷。 欧阳修《浪淘沙》 把酒祝东风，且共从容，垂杨紫陌洛城东。总是当时携手处，游遍芳丛。聚散苦匆匆，此恨无穷。今年花胜去年红。可惜明年花更好，知与谁同？ 严仁《木兰花》 春风只在园西畔，荠菜花繁蝴蝶乱。冰池晴绿照还空，香径落红吹已断。意长翻恨游丝短，尽日相思罗带缓。宝奁如月不欺人，明日归来君试看。 欧阳修《玉楼春》 池塘水绿风微暖。记得玉真初见面。重头歌韵响琤琮，入破舞腰红乱旋。玉钩阑下香阶畔。醉后不知斜日晚。当时共我赏花人，点检如今无一半。 蔡伸《柳梢春》 数声鶗鴂，可怜又是、春归时节。满院东风，海棠铺绣，梨花飘雪。丁香露泣残枝，算未比、愁肠寸结。自是休文，多情多感，不干风月。 鶗鴂【tíjué:杜鹃鸟】 李清照《武陵春》 风住尘香花已尽，日晚倦梳头。物是人非事事休，欲语泪先流。闻说双溪春尚好，也拟泛轻舟。只恐双溪舴艋舟，载不动，许多愁。 张先《千秋岁》 数声鹈鹕，又报芳菲歇。惜春更把残红折，雨轻风色暴，梅子青时节。永丰柳，无人尽日花飞雪。莫把幺弦拨，怨极弦能说。天不老，情难绝。心似双丝网，有千千结。夜过也，东窗未白孤灯月。 李煜《清平乐》 别来春半，触目愁肠断。砌下落梅如雪乱，拂了一身还满。雁来音信无凭，路遥归梦难成。离恨恰如春草，更行更远还生。 晏几道《清平乐》 留人不住，醉解兰舟去。一棹碧涛春水路，过尽晓莺啼处。渡头杨柳青青，枝枝叶叶离情。此后锦书休寄，画楼云雨无凭。 李清照《醉花阴》 薄雾浓云愁永昼，瑞脑消金兽。佳节又重阳，玉枕纱厨，半夜凉初透。东篱把酒黄昏后，有暗香盈袖。莫道不消魂，卷帘西风，人比黄花瘦。 李煜《浪淘沙令》帘外雨潺潺 帘外雨潺潺，春意阑珊。罗衾不耐五更寒。梦里不知身是客，一晌贪欢。独自莫凭栏，无限关山。别时容易见时难。流水落花春去也，天上人间。 姜夔《扬州慢》 淮左名都，竹西佳处，解鞍少驻初程。过春风十里，尽荠麦青青。自胡马窥江去后；废池乔木，犹厌言兵。渐黄昏，清角吹寒，都在空城。杜郎俊赏，算而今、重到须惊。纵豆蔻词工，青楼梦好，难赋深情。二十四桥仍在，波心荡、冷月无声。念桥边红药，年年知为谁生。 姜夔在这首《扬州慢》中一共化入了杜牧的四首诗：① 竹西佳处：“雨过一蝉噪，飘萧松桂秋。青苔满阶砌，白鸟故迟留。暮霭生深树，斜阳下小楼。谁知竹西路，歌吹是扬州。”（杜牧《扬州禅智寺》）②青楼梦好：“落魄江湖载酒行，楚腰纤细掌中轻。十年一觉扬州梦，赢得青楼薄幸名。”（杜牧《遣怀》）③纵豆蔻词工：“娉娉袅袅十三馀，豆蔻梢头二月初。春风十里扬州路，卷上珠帘总不如。”（杜牧《赠别》）④二十四桥仍在：“青山隐隐水迢迢，秋尽江南草木凋。二十四桥明月夜，玉人何处教吹箫？”（杜牧《寄扬州韩绰判官》） 苏试《江城子》 十年生死两茫茫，不思量，自难忘，千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。昨夜幽梦忽还乡，小轩窗，正梳妆，相顾无言，惟有泪千行。料得年年断肠处，明月夜，短松岗。 晏殊《清平乐》 红笺小字，说尽平生意。鸿雁在云鱼在水，惆怅此情难寄。斜阳独倚西楼，遥山恰对帘钩。人面不知何处，绿波依旧东流。 晏殊《浣溪沙》 一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？无可奈何花落去，似曾相识燕归来。小园香径独徘徊。 柳永《雨霖铃》 寒蝉凄切，对长亭晚，骤雨初歇。都门帐饮无绪，留恋处，兰舟催发。执手相看泪眼，竟无语凝噎。念去去，千里烟波，暮霭沉沉楚天阔。多情自古伤离别，更那堪，落清秋节！今宵酒醒何处？杨柳岸，风残月。此去经年，应是良辰好景虚设。便纵有千种风情，更与何人说。 李煜《乌夜啼》 林花谢了春红,太匆匆,无奈朝来寒雨晚来风。胭脂泪,留人醉,几时重,自是人生长恨水长东。 辛弃疾《青玉案.元夕》 东风夜放花千树，更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。蛾儿雪柳黄金缕，笑语盈盈暗香去。众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。 吴文英《唐多令》 何处合成愁?离人心上秋。纵芭蕉不雨也飕飕。都道晚凉天气好，有明月，怕登楼。年事梦中休，花空烟水流。燕辞归客尚淹留。垂柳不萦裙带住，谩长是、系行舟。 张先《一丛花》 伤高怀远几时穷？无物似情浓。离愁正引千丝乱，更东陌，飞絮蒙蒙。嘶骑渐遥，征尘不断，何处认郎踨。双鸳池沼水溶溶，南北小桡通。梯横画阁黄昏后，又还是斜月帘拢。沉恨细思，不如桃杏，犹解嫁东风。 苏轼《水龙吟·次韵章质夫杨花词》 似花还似非花，也无人惜从教坠。抛家傍路，思量却是，无情有思。萦损柔肠，困酣妖眼，欲开还闭。梦随风万里，寻郎去处，又还被，莺呼起。不恨此花飞尽，恨西园，落红难缀。晓来雨过，遗踪何在？ 一池萍碎。春色三分，二分尘土，一分流水。细看来，不是杨花，点点是离人泪。 周邦彦《拜星月慢》 夜色催更，清尘收露，小曲幽坊月暗。竹槛灯窗，识秋娘庭院。笑相遇，似觉琼枝玉树相倚，暖日明霞光烂。水盼兰情，总平生稀见。画图中、旧识春风面，谁知道自到瑶台畔。眷恋雨润云温，苦惊风吹散。念荒寒寄宿无人馆，重门闭，败壁秋虫叹。怎奈向一缕相思，隔溪山不断。 周紫芝《鹧鸪天》 乍凉秋气满屏帏。梧桐叶上三更雨，叶叶声声是别离。调宝瑟，拨金猊，那时同唱鹧鸪词。如今风雨西楼夜，不听清歌也泪垂。 钱惟演《木兰花》 城上风光莺语乱，城下烟波春拍岸。绿杨芳草几时休？泪眼愁肠先已断。情怀渐觉成衰晚，鸾镜朱颜惊暗换。昔年多病厌芳尊，今日芳尊惟恐浅。 辛弃疾 《贺新郎》 将军百战身名裂。向河梁，回首万里，故人长绝。易水萧萧西风冷，满座衣冠似雪。正壮士，悲歌未彻。啼鸟还知如许恨，料不啼清泪长啼血。谁共我，醉明月。 贺铸《石州慢》 薄雨收寒，斜照弄晴，春意空阔。长亭柳色才黄，远客一枝先折。烟横水漫，映带几点归鸿，平沙消尽龙沙雪。犹记出关来，恰而今时节。将发，画楼芳酒，红泪清歌，便成轻别。回首经年，杳杳音尘都绝。欲知方寸，共有几许新愁？芭蕉不展丁香结。枉望断天涯，两厌厌风月。 晁补之《水龙吟》次韵林圣予《惜春》 问春何苦勿勿，带风伴雨如驰骤。幽葩细萼，小园低槛，壅培未就。吹尽繁红，占春长久，不如垂柳。算春长不老，人愁春老，愁只是、人间有。春恨十常八九，忍轻孤、芳醪经口。那知自是、桃花结子，不因春瘦。世上功名，老来风味，春归时候。最多情犹有，尊前青眼，相逢依旧。 李煜 《长相思》 一重山，两重山，山远天高烟水寒，相思枫叶丹。菊花开，菊花残，塞雁高飞人未还，一帘风月闲。 李煜《虞美人》 春花秋月何时了, 往事知多少。小楼昨夜又东风, 故国不堪回首月明中。雕栏玉砌应犹在，只是朱颜改。问君能有几多愁，恰似一江春水向东流。 欧阳修《踏莎行》 候馆梅残，溪桥柳细，草薰风暖摇征辔。离愁渐远渐无穷，迢迢不断如春水。寸寸柔肠，盈盈粉泪，楼高莫近危阑倚。平芜尽处是春山，行人更在春山外。 苏轼次韵章质夫《杨花词》 似花还似非花，也无人惜从教坠。抛家傍路，思量却是，无情有思。萦损柔肠，困酣娇眼，欲开还闭。梦随风万里，寻郎去处，又还被莺呼起。不恨此花飞尽，恨西园、落红难缀。晓还雨过，遗踪何在？一池萍碎。春色三分，二分尘土，一分流水。细看来不是杨花，点点是离人泪。 范仲淹《苏幕遮》 碧云天，黄叶地，秋色连波，波上寒烟翠。山映斜阳天接水，芳草无情，更在斜阳外。黯乡魂，追旅思。夜夜除非，好梦留人睡。明月楼高休独倚，酒入愁肠，化作相思泪。 李清照 《声声慢》 寻寻觅觅，冷冷清清，凄凄惨惨戚戚。乍暖还寒时侯，最难将息。三杯两盏淡酒，怎敌他、晚来风急。雁过也，最伤心，却是旧时相识。满地黄花堆积，惟悴损、如今有谁堪摘。守着窗儿，独自怎生得黑？梧桐更兼细雨，到黄昏、点点滴滴。这次第，怎一个愁字了得。 李清照《一剪梅》 红藕香残玉簟秋，轻解罗裳，独上兰舟。云中谁寄锦书来？雁字回时，月满西楼。花自飘零水自流。一种相思，两处闲愁。此情无计可消除，才下眉头，却上心头。 晏殊《木兰花》 绿杨芳草长亭路，年少抛人容易去。楼头残梦五更钟，花底离愁三月雨。无情不似多情苦，一寸还成千万缕。天涯地角有穷时，只有相思无尽处。 纳兰容若《饮水词·梦江南》 昏鸦尽，小立恨因谁？急雪乍翻香阁絮，轻风吹到胆瓶梅，心字已成灰。 诗经 《国风·邶风·击鼓》 击鼓其镗，踊跃用兵。土国城漕，我独南行。从孙子仲，平陈与宋。不我以归，忧心有忡。爰居爰处？爰丧其马？于以求之？于林之下。死生契阔，与子成说。执子之手，与子偕老。于嗟阔兮，不我活兮。于嗟洵兮，不我信兮。 元好问《摸鱼儿》 问世间、情是何物，直教生死相许？南地北双飞客，老翅几回寒暑。欢乐趣，离别苦，就中更有痴儿女。君应有语，渺万里层云，千山暮雪，只影向谁去？横汾路，寂寞当年箫鼓，荒烟依旧平楚。招魂楚些何嗟及，山鬼暗啼风雨。天也妒，未信与，莺儿燕子俱黄土。千秋万古，为留待骚人，狂歌痛饮，来访雁丘处。 一个人总要走陌生的路，看陌生的风景，听陌生的歌，然后在某个不经意的瞬间，你会发现，原本是费尽心机想要忘记的事情真的就那么忘记了]]></content>
+      <tags>
+        <tag>诗词</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用链接]]></title>
+    <url>%2F2017%2F%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5.html</url>
+    <content type="text"><![CDATA[Www.google.comGmail.google.comMail.qq.comYoutubeTwitterTransipGoproxy/issuesV2rayMy GithubMclmixool Www.baidu.comYoukuBilibiliDouban.fm中国移动 LowendtalkHostlocaliyunArukasTragicserversDaocloudProgram-think]]></content>
+      <tags>
+        <tag>bookmarks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo发布和备份到github]]></title>
+    <url>%2F2017%2FHexo%E5%8F%91%E5%B8%83%E5%92%8C%E5%A4%87%E4%BB%BD%E5%88%B0github.html</url>
+    <content type="text"><![CDATA[搭建流程 创建仓库 创建两个分支：master 与 hexo 设置hexo为默认分支（方便手动管理） 本地拷贝仓库git clone https://github.com/mixool/mixool.github.io.git 在mixool.github.io.git文件夹下有一个隐藏的.git文件夹，通过Git bash依次执行: 12345npm install hexo在hexo init前复制.git，完成hexo init后再黏贴回来覆盖新生成的.githexo initnpm installnpm install hexo-deployer-git 修改_config.yml中的deploy参数，分支应为master 依次执行: 123git add .git commit -m &quot;update hexo&quot;git push origin hexo 执行hexo g -d生成网站并部署到GitHub上,GitHub上的仓库就有两个分支，一个hexo分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。完美( •̀ ω •́ )y 更新和恢复 更新 1234git add .git commit -m &quot;update hexo&quot;git push origin hexo //更新到hexohexo g -d //发布到master 恢复Install hexo 1234567git clone https://github.com/mixool/mixool.github.io.gitcd mixool.github.ionpm install -g hexo-clinpm installnpm install hexo-deployer-git --savegit clone https://github.com/iissnan/hexo-theme-next themes/nexthexo s]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[windows使用hyper.sh]]></title>
+    <url>%2F2017%2FWindows%E4%BD%BF%E7%94%A8hyper-sh.html</url>
+    <content type="text"><![CDATA[Hyper.sh是一家国外的容器服务提供商，新注册有送10刀。 定价页面: https://hyper.sh/pricing.html 将下载的hyper.exe放在CMD的相应路径下运行，windows下使用常用命令：建立s4大小的容器.\hyper.exe run --size s4 -d --name centos-ssh -p 22:22 -p 443:443 -p 80:80 kinogmt/centos-ssh 查看所有容器.\hyper.exe ps -a 停止某个容器(容器Name 或者 ID).\hyper.exe stop centos-ssh 重启某个容器(容器Name 或者 ID),重启不会丢容器的数据。.\hyper.exe restart centos-ssh 启动某个容器(容器Name 或者 ID).\hyper.exe start centos-ssh 删除某个容器(容器Name 或者 ID) 删除前请停止.\hyper.exe rm centos-ssh 查看所有镜像获取ID.\hyper.exe images -a 删除镜像(ID).\hyper.exe rmi ID 删除所有资源后，释放FIP，避免扣费。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[使用Droppy搭建私人云存储]]></title>
+    <url>%2F2017%2F%E4%BD%BF%E7%94%A8Droppy%E6%90%AD%E5%BB%BA%E7%A7%81%E4%BA%BA%E4%BA%91%E5%AD%98%E5%82%A8.html</url>
+    <content type="text"><![CDATA[一个开源的网盘服务程序Droppy通过浏览器就能够随时随地进行上传下载、预览编辑、外链分享等文件管理操作，功能强大，且十分轻量，非常适合作为个人的网络存储管理界面。Demo试用 安装步骤 演示使用的系统环境为Debian 8 Jessie x64。Droppy基于Node.js，所以首先需要安装Node.js环境12curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -apt-get install -y nodejs 安装Droppy1npm install -g droppy 安装完成后使用droppy -h可以查看运行命令。如果需要让Droppy监听小于1024的端口12apt-get install libcap2-binsetcap cap_net_bind_service=+ep `readlink -f \`which node\`` 然后修改配置文件vi /root/.droppy/config/config.json重新运行droppy即可。 参考teainkGithub主页]]></content>
+      <tags>
+        <tag>Droppy</tag>
+        <tag>云盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Digitalocean搭建WordPress博客并启用HTTPS]]></title>
+    <url>%2F2017%2FDigitalocean%E6%90%AD%E5%BB%BAWordPress%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%90%AF%E7%94%A8HTTPS.html</url>
+    <content type="text"><![CDATA[注册Digtalocean一键搭建WordPresshow-to-use-the-wordpress-one-click-install-on-digitalocean 启用BBR加速（By teddysun）123wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.shchmod +x bbr.sh./bbr.sh 使用acme.sh签发Let’s Encrypt免费ECC SSL证书我是照着这篇文章做的 WordPress强制HTTPSApache2开启ssl和rewritea2enmod ssla2enmod rewriteservice apache2 restart 编辑配置文件vi /etc/apache2/sites-available/default-ssl.conf1234567891011121314151617181920212223&lt;IfModule mod_ssl.c&gt; &lt;VirtualHost _default_:443&gt; ServerAdmin admin@example.com ServerName your_domain.com ServerAlias www.your_domain.com DocumentRoot /var/www/html ErrorLog $&#123;APACHE_LOG_DIR&#125;/error.log CustomLog $&#123;APACHE_LOG_DIR&#125;/access.log combined SSLEngine on SSLCertificateFile /Let's Encrypt证书位置 SSLCertificateKeyFile /Let's Encrypt证书KEY位置 &lt;FilesMatch "\.(cgi|shtml|phtml|php)$"&gt; SSLOptions +StdEnvVars &lt;/FilesMatch&gt; &lt;Directory /usr/lib/cgi-bin&gt; SSLOptions +StdEnvVars &lt;/Directory&gt; BrowserMatch "MSIE [2-6]" \ nokeepalive ssl-unclean-shutdown \ downgrade-1.0 force-response-1.0 BrowserMatch "MSIE [17-9]" ssl-unclean-shutdown &lt;/VirtualHost&gt;&lt;/IfModule&gt; vi /etc/apache2/sites-available/000-default.conf123RewriteEngine onRewriteCond %&#123;SERVER_PORT&#125; !^443$RewriteRule ^(.*)?$ https://%&#123;SERVER_NAME&#125;/$1 [L,R] service apache2 restart 在WordPress的设置里面填写你的HTTPS域名完工]]></content>
+      <tags>
+        <tag>WordPress</tag>
+      </tags>
+  </entry>
+</search>

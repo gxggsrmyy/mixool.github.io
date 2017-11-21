@@ -1,0 +1,5 @@
+# hexo robots.txt
+User-agent: * 
+Allow: /
+Sitemap: http://cioic.cc/sitemap.xml
+Sitemap: http://cioic.cc/baidusitemap.xml
