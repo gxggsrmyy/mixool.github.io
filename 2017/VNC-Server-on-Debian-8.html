@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="cioic">
-<meta property="og:url" content="http://cioic.cc/tags/Github/index.html">
+<meta name="description" content="Installing VNC and XFCE1234apt-get updateapt-get upgrade -y mkdir /dev/fuse &amp;amp;&amp;amp; chmod +x /dev/fuse  apt-get install xfce4 xfce4-goodies gnome-icon-theme tightvncserver iceweasel -y">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VNC Server on Debian 8">
+<meta property="og:url" content="http://cioic.cc/2017/VNC-Server-on-Debian-8.html">
 <meta property="og:site_name" content="cioic">
+<meta property="og:description" content="Installing VNC and XFCE1234apt-get updateapt-get upgrade -y mkdir /dev/fuse &amp;amp;&amp;amp; chmod +x /dev/fuse  apt-get install xfce4 xfce4-goodies gnome-icon-theme tightvncserver iceweasel -y">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-21T02:11:07.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cioic">
+<meta name="twitter:title" content="VNC Server on Debian 8">
+<meta name="twitter:description" content="Installing VNC and XFCE1234apt-get updateapt-get upgrade -y mkdir /dev/fuse &amp;amp;&amp;amp; chmod +x /dev/fuse  apt-get install xfce4 xfce4-goodies gnome-icon-theme tightvncserver iceweasel -y">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://cioic.cc/tags/Github/"/>
+  <link rel="canonical" href="http://cioic.cc/2017/VNC-Server-on-Debian-8.html"/>
 
 
 
 
 
-  <title>标签: Github | cioic</title>
+  <title>VNC Server on Debian 8 | cioic</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,54 +272,156 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Github<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://cioic.cc/2017/VNC-Server-on-Debian-8.html">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mcl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cioic">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/Hexo发布和备份到github.html" itemprop="url">
-              
-                <span itemprop="name">Hexo发布和备份到github</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">VNC Server on Debian 8</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-14T19:34:06+08:00"
-              content="2017-07-14" >
-          07-14
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-21T10:00:42+08:00">
+                2017-11-21
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="Installing-VNC-and-XFCE"><a href="#Installing-VNC-and-XFCE" class="headerlink" title="Installing VNC and XFCE"></a>Installing VNC and XFCE</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">apt-get update</div><div class="line">apt-get upgrade -y </div><div class="line">mkdir /dev/fuse &amp;&amp; chmod +x /dev/fuse  </div><div class="line">apt-get install xfce4 xfce4-goodies gnome-icon-theme tightvncserver iceweasel -y</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="VNC-Server"><a href="#VNC-Server" class="headerlink" title="VNC Server:"></a>VNC Server:</h3><ul>
+<li>start: <code>vncserver</code>  </li>
+<li>stop: <code>vncserver -kill :1</code>  </li>
+</ul>
+<h3 id="Connecting-from-a-VNC-Client"><a href="#Connecting-from-a-VNC-Client" class="headerlink" title="Connecting from a VNC Client"></a>Connecting from a VNC Client</h3><p>You can now connect to your VNC server. Open your local VNC client, which will vary depending on your operating system.  </p>
+<ul>
+<li>On Windows, you can use UltraVNC <a href="http://www.uvnc.com/downloads/ultravnc.html" target="_blank" rel="external">here</a>.  </li>
+<li>On OS X, you can use the built-in Screen Sharing app or access this app through Safari. In Safari, you can enter vnc://yourserverip:5901  </li>
+</ul>
+<p>For your VNC Server address, enter yourserverip:5901 and use the password you just set for your VNC connection.</p>
+<h3 id="About"><a href="#About" class="headerlink" title="About"></a>About</h3><blockquote>
+<p>From：<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-vnc-server-on-debian-8" target="_blank" rel="external">Digitalocean</a></p>
+</blockquote>
+<h3 id="我的使用方式"><a href="#我的使用方式" class="headerlink" title="我的使用方式"></a>我的使用方式</h3><p>主要是c9.io运行科学上网的程序，关闭界面后会自动休眠，VNC可以解决这个痛点。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/openvpn.html" rel="next" title="Openvpn">
+                <i class="fa fa-chevron-left"></i> Openvpn
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -323,6 +429,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -345,8 +455,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -435,6 +554,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Installing-VNC-and-XFCE"><span class="nav-number">1.</span> <span class="nav-text">Installing VNC and XFCE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VNC-Server"><span class="nav-number">2.</span> <span class="nav-text">VNC Server:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Connecting-from-a-VNC-Client"><span class="nav-number">3.</span> <span class="nav-text">Connecting from a VNC Client</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#About"><span class="nav-number">4.</span> <span class="nav-text">About</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我的使用方式"><span class="nav-number">5.</span> <span class="nav-text">我的使用方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -564,6 +699,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
