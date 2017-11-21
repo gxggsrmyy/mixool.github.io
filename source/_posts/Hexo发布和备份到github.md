@@ -53,7 +53,8 @@ tags:
    cd mixool.github.io
    npm install -g hexo-cli
    npm install
+   npm install hexo-generator-searchdb --save
    npm install hexo-deployer-git --save
-   git clone https://github.com/iissnan/hexo-theme-next themes/next
+   git clone --branch v5.1.3 https://github.com/iissnan/hexo-theme-next themes/next
    hexo s
    ```

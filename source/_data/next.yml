@@ -19,10 +19,10 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /favicon.ico
+  medium: /favicon.ico
+  apple_touch_icon: /favicon.ico
+  safari_pinned_tab: /favicon.ico
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -40,7 +40,7 @@ footer:
   since: 2016
 
   # Icon between year and copyright info.
-  icon: user
+  icon: github
 
   # If not defined, will be used `author` from Hexo main config.
   #copyright:
@@ -120,7 +120,7 @@ scheme: Mist
 social:
   GitHub: https://github.com/mixool || github
   Twitter: https://twitter.com/mixool1 || twitter
-  #Google: https://plus.google.com/yourname || google
+  Glog: https://git.io/Mclog || github
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
@@ -141,11 +141,11 @@ links_title: 友情链接
 links:
   独立世界: https://yjk.im/
   小桥流水: https://ehlxr.me/
-  HuangZZ : https://huangzz.xyz/
+  Huang ZZ : https://huangzz.xyz/
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /uploads/Mcl.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -351,8 +351,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: cioic
   count: true
 
 # Hypercomments
