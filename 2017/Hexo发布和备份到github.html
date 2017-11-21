@@ -53,16 +53,16 @@
 <link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=5.1.3">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=5.1.3">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=5.1.3">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+  <link rel="mask-icon" href="/favicon.ico?v=5.1.3" color="#222">
 
 
 
@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="cioic">
 <meta property="og:description" content="搭建流程 创建仓库    创建两个分支：master 与 hexo  设置hexo为默认分支（方便手动管理）  本地拷贝仓库git clone https://github.com/mixool/mixool.github.io.git">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-21T01:18:46.153Z">
+<meta property="og:updated_time" content="2017-11-21T02:28:33.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo发布和备份到github">
 <meta name="twitter:description" content="搭建流程 创建仓库    创建两个分支：master 与 hexo  设置hexo为默认分支（方便手动管理）  本地拷贝仓库git clone https://github.com/mixool/mixool.github.io.git">
@@ -292,7 +292,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mcl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/Mcl.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -329,6 +329,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/Hexo发布和备份到github.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/Hexo发布和备份到github.html" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -380,7 +391,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &quot;update hexo&quot;</div><div class="line">git push origin hexo    //更新到hexo</div><div class="line">hexo g -d               //发布到master</div></pre></td></tr></table></figure>
 </li>
 <li><p>恢复<br><a href="https://hexo.io/zh-cn/docs/index.html#安装" target="_blank" rel="external">Install hexo</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/mixool/mixool.github.io.git</div><div class="line">cd mixool.github.io</div><div class="line">npm install -g hexo-cli</div><div class="line">npm install</div><div class="line">npm install hexo-deployer-git --save</div><div class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</div><div class="line">hexo s</div></pre></td></tr></table></figure></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/mixool/mixool.github.io.git</div><div class="line">cd mixool.github.io</div><div class="line">npm install -g hexo-cli</div><div class="line">npm install</div><div class="line">npm install hexo-generator-searchdb --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line">git clone --branch v5.1.3 https://github.com/iissnan/hexo-theme-next themes/next</div><div class="line">hexo s</div></pre></td></tr></table></figure></li>
 </ol>
 
       
@@ -456,6 +467,16 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -493,6 +514,10 @@
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/Mcl.jpg"
+                alt="Mcl" />
             
               <p class="site-author-name" itemprop="name">Mcl</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -543,6 +568,12 @@
                       <i class="fa fa-fw fa-twitter"></i>Twitter</a>
                 </span>
               
+                <span class="links-of-author-item">
+                  <a href="https://git.io/Mclog" target="_blank" title="Glog">
+                    
+                      <i class="fa fa-fw fa-github"></i>Glog</a>
+                </span>
+              
             
           </div>
 
@@ -567,7 +598,7 @@
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://huangzz.xyz/" title="HuangZZ" target="_blank">HuangZZ</a>
+                    <a href="https://huangzz.xyz/" title="Huang ZZ" target="_blank">Huang ZZ</a>
                   </li>
                 
               </ul>
@@ -611,7 +642,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-github"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Mcl</span>
 
@@ -741,6 +772,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://cioic.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://cioic.cc/2017/Hexo发布和备份到github.html';
+          this.page.identifier = '2017/Hexo发布和备份到github.html';
+          this.page.title = 'Hexo发布和备份到github';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://cioic.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -753,10 +804,6 @@
   
 
 
-
-
-
-  
 
 
 
