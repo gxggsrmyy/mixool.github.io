@@ -14,6 +14,7 @@ apt-get install xfce4 xfce4-goodies gnome-icon-theme tightvncserver iceweasel -y
 ### VNC Server:
 * start: `vncserver`  
 * stop: `vncserver -kill :1`  
+
 ### Connecting from a VNC Client
 You can now connect to your VNC server. Open your local VNC client, which will vary depending on your operating system.  
 * On Windows, you can use UltraVNC [here](http://www.uvnc.com/downloads/ultravnc.html).  
